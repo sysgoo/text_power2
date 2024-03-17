@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <div class="na_link" id="nav_link">
+                <i class="fa solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">الرئيسية</a></li>
+                    <li><a href="">خدماتنا</a></li>
+                    <li><a href="">الصيانة</a></li>
+                    <li><a href="">من نحن</a></li>
+                    <li><a href="">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <i class="fa solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <div class="text_box">
+            <h1>مركز إختبار القوة</h1>
+            <p>متخصصون في الصيانة والعناية لجميع السيارات</p>
+        </div>
+
+        <div class="cars">
+            <a href=""><img src="img/2.jpg" alt=""></a>
+            <a href=""><img src="img/3.jpg" alt=""></a>
+            <a href=""><img src="img/4.jpg" alt=""></a>
+        </div>
+    </section>
+</body>
+
+
+<script>
+    var nav_link = document.getElementById("nav_link");
+    function showmenu() {
+        nav_link.style.right = "0";
+    }
+
+    function hidemenu() {
+        nav_link.style.right = "-200px";
+    }
+</script>
+
+</html>
